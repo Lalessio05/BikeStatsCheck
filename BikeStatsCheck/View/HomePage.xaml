@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:BikeStatsCheck.ViewModel"
+             x:DataType="viewmodel:FieldsViewModel"
+             x:Class="BikeStatsCheck.View.HomePage"
+             Title="Fields">
+
+    <ScrollView>
+        <Grid
+            ColumnDefinitions="*" 
+            RowDefinitions="*,4*,*" 
+            BackgroundColor="Black">
+            
+            <!-- Row 0 -->
+            <Label Grid.Row="0"
+                   Text="BikeStatsCkeck"
+                   TextColor="White"
+                   FontSize="35"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   BackgroundColor="#11009E"
+                   Margin="0,-55,0,0"
+                   HeightRequest="75"/>
+
+            <!-- Row 1 -->
+            <Label Grid.Row="1"
+                   Text="Current Field1"
+                   TextColor="White"
+                   FontSize="40"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Margin="0,0,0,425"
+                   BackgroundColor="#6DA9E4"
+                   WidthRequest="350"
+                   HeightRequest="100"/>
+
+            <Entry Grid.Row="1"
+                   BackgroundColor="White"
+                   Margin="0,0,0,200"
+                   WidthRequest="350"
+                   HeightRequest="100"
+                   FontSize="40"/>
+
+            <Label Grid.Row="1"
+                   Text="Current Field2"
+                   TextColor="White"
+                   FontSize="40"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Margin="0,125,0,0"
+                   BackgroundColor="#6DA9E4"
+                   WidthRequest="350"
+                   HeightRequest="100"/>
+
+            <Entry Grid.Row="1"
+                   BackgroundColor="White"
+                   Margin="0,350,0,0"
+                   WidthRequest="350"
+                   HeightRequest="100"
+                   FontSize="40"/>
+            
+            <!-- Row 2 -->
+            <HorizontalStackLayout Grid.Row="2" 
+                                   HeightRequest="75">
+                
+                <Button Text="CLEAR"
+                        BackgroundColor="#11009E"
+                        FontSize="15"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        Margin="7.5,0,0,0"/>
+
+                <Button Text="RECAP"
+                        BackgroundColor="#11009E"
+                        FontSize="15"
+                        WidthRequest="125"
+                        HeightRequest="75"
+                        Margin="20,0,0,0"/>
+
+                <Button Text="BACK"
+                        BackgroundColor="#11009E"
+                        FontSize="15"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        Margin="15,0,0,0"/>
+
+                <Button Text="NEXT"
+                        BackgroundColor="#11009E"
+                        FontSize="15"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        Margin="10,0,0,0"/>
+
+            </HorizontalStackLayout>
+            
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
